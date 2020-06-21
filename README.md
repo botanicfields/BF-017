@@ -1,8 +1,11 @@
 # BF-017
-KiCad PCB data of Discrete 555
+タイマーIC 555をディスクリート・トランジスタで作る基板
 
 Qiitaに説明があります。
 https://qiita.com/BotanicFields/items/ccec29255a49967116c1
+
+GitHubに資料があります。
+https://github.com/botanicfields/BF-017
 
 ### はじめに
 古典的なタイマーICである555の内部回路を、単体（ディスクリート）トランジスタで実現するプリント基板を作成しました。中国の製造業者がプリント基板を安価かつ短納期で試作してくれます。個人でもプリント基板の設計発注が容易になっていて、555はトレーニングに適切な題材と思いました。
@@ -15,3 +18,12 @@ https://qiita.com/BotanicFields/items/ccec29255a49967116c1
 資料は訂正済のものです。正しくは資料を参照ください。
 
 https://github.com/botanicfields/BF-017/blob/master/BF-017_POS.pdf
+
+2020年6月22日
+
+BotanicFields, Inc.
+
+https://www.facebook.com/botanicfields/
+
+https://twitter.com/botanicfields
+
