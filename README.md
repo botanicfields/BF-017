@@ -15,7 +15,7 @@ https://github.com/botanicfields/BF-017
  
 ### お詫び
 　プリント基板のシルク印刷でQ10, Q11, Q12, Q13の位置を間違えています。幸い、いずれも同じPNPトランジスタなので結果的に組立時には問題にはなりません。
-資料は訂正済のものです。正しくは資料を参照ください。
+V01L02で修正しました。資料は訂正済のものです。正しくは資料を参照ください。
 
 https://github.com/botanicfields/BF-017/blob/master/BF-017_POS.pdf
 
