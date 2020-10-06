@@ -7,6 +7,9 @@ https://qiita.com/BotanicFields/items/ccec29255a49967116c1
 GitHubに資料があります。
 https://github.com/botanicfields/BF-017
 
+AkiCart:
+https://aki.prioris.jp/list/0b58d2fc-eee4-429c-9d86-0e2e1c66c018/
+
 ### はじめに
 　古典的なタイマーICである555の内部回路を、単体（ディスクリート）トランジスタで実現するプリント基板を作成しました。中国の製造業者がプリント基板を安価かつ短納期で試作してくれます。個人でもプリント基板の設計発注が容易になっていて、555はトレーニングに適切な題材と思いました。
 
