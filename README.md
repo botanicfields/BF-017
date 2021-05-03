@@ -1,6 +1,9 @@
 # BF-017
 タイマーIC 555をディスクリート・トランジスタで作る基板
 
+頒布(Martket place):
+https://www.switch-science.com/catalog/6433/
+
 Qiitaに説明があります。
 https://qiita.com/BotanicFields/items/ccec29255a49967116c1
 
