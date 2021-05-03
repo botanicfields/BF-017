@@ -1,0 +1,1431 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BF-017"
+Date "2020-06-20"
+Rev "V01L02"
+Comp "Copyright 2020 BotanicFields, Inc."
+Comment1 "Discrete 555"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:2SA1015 Q9
+U 1 1 5EDF12D0
+P 5250 2300
+F 0 "Q9" H 5441 2254 50  0000 L CNN
+F 1 "PNP" H 5441 2345 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5450 2225 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 5250 2300 50  0001 L CNN
+	1    5250 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q1
+U 1 1 5EDF154A
+P 1450 3700
+F 0 "Q1" H 1641 3746 50  0000 L CNN
+F 1 "NPN" H 1641 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 1650 3625 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 1450 3700 50  0001 L CNN
+	1    1450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q7
+U 1 1 5EDF1B62
+P 2850 2700
+F 0 "Q7" H 3041 2654 50  0000 L CNN
+F 1 "PNP" H 3041 2745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3050 2625 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 2850 2700 50  0001 L CNN
+	1    2850 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q6
+U 1 1 5EDF27E1
+P 2150 2700
+F 0 "Q6" H 2340 2654 50  0000 L CNN
+F 1 "PNP" H 2340 2745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 2350 2625 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 2150 2700 50  0001 L CNN
+	1    2150 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q5
+U 1 1 5EDF3871
+P 1650 2700
+F 0 "Q5" H 1841 2654 50  0000 L CNN
+F 1 "PNP" H 1841 2745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 1850 2625 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 1650 2700 50  0001 L CNN
+	1    1650 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q8
+U 1 1 5EDF3EE4
+P 3350 2700
+F 0 "Q8" H 3540 2654 50  0000 L CNN
+F 1 "PNP" H 3540 2745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3550 2625 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 3350 2700 50  0001 L CNN
+	1    3350 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EDF5157
+P 1550 1700
+F 0 "R1" H 1620 1746 50  0000 L CNN
+F 1 "4.7k" H 1620 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1480 1700 50  0001 C CNN
+F 3 "~" H 1550 1700 50  0001 C CNN
+	1    1550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EDF56EA
+P 2500 1700
+F 0 "R2" H 2570 1746 50  0000 L CNN
+F 1 "820" H 2570 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2430 1700 50  0001 C CNN
+F 3 "~" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2500 2250 2450
+Wire Wire Line
+	2250 2450 2500 2450
+Wire Wire Line
+	2750 2450 2750 2500
+Connection ~ 2500 2450
+Wire Wire Line
+	2500 2450 2750 2450
+$Comp
+L Device:R R3
+U 1 1 5EDF715F
+P 3450 1700
+F 0 "R3" H 3520 1746 50  0000 L CNN
+F 1 "4.7k" H 3520 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3380 1700 50  0001 C CNN
+F 3 "~" H 3450 1700 50  0001 C CNN
+	1    3450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2700 1900 2700
+Wire Wire Line
+	1550 2900 1550 2950
+Wire Wire Line
+	1550 2950 1900 2950
+Wire Wire Line
+	1900 2950 1900 2700
+Connection ~ 1900 2700
+Wire Wire Line
+	1900 2700 1950 2700
+Wire Wire Line
+	1550 2500 1550 2350
+$Comp
+L power:GND #PWR0101
+U 1 1 5EDFA30E
+P 2750 2950
+F 0 "#PWR0101" H 2750 2700 50  0001 C CNN
+F 1 "GND" H 2755 2777 50  0000 C CNN
+F 2 "" H 2750 2950 50  0001 C CNN
+F 3 "" H 2750 2950 50  0001 C CNN
+	1    2750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2900 2750 2950
+Wire Wire Line
+	1550 1550 1550 1500
+Wire Wire Line
+	1550 1500 2500 1500
+Wire Wire Line
+	3450 1500 3450 1550
+Wire Wire Line
+	2500 1500 2500 1550
+Connection ~ 2500 1500
+Wire Wire Line
+	2500 1500 3450 1500
+$Comp
+L Transistor_BJT:2SC1815 Q4
+U 1 1 5EDFC22F
+P 3550 3700
+F 0 "Q4" H 3741 3746 50  0000 L CNN
+F 1 "NPN" H 3741 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3750 3625 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3550 3700 50  0001 L CNN
+	1    3550 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q2
+U 1 1 5EDFCBEF
+P 1800 3950
+F 0 "Q2" H 1991 3996 50  0000 L CNN
+F 1 "NPN" H 1991 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 2000 3875 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 1800 3950 50  0001 L CNN
+	1    1800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q3
+U 1 1 5EDFD531
+P 3200 3950
+F 0 "Q3" H 3391 3996 50  0000 L CNN
+F 1 "NPN" H 3391 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3400 3875 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3200 3950 50  0001 L CNN
+	1    3200 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3950 1600 3950
+Wire Wire Line
+	1550 3900 1550 3950
+Wire Wire Line
+	3400 3950 3450 3950
+Wire Wire Line
+	3450 3950 3450 3900
+Wire Wire Line
+	1900 4150 1900 4200
+Wire Wire Line
+	1900 4200 2300 4200
+Wire Wire Line
+	3100 4200 3100 4150
+Wire Wire Line
+	1900 3450 1900 3750
+Wire Wire Line
+	3450 3450 3100 3450
+Wire Wire Line
+	3100 3450 3100 3750
+Wire Wire Line
+	3450 3450 3450 3500
+$Comp
+L Device:R R5
+U 1 1 5EE010E1
+P 2500 4700
+F 0 "R5" H 2570 4746 50  0000 L CNN
+F 1 "10k" H 2570 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2430 4700 50  0001 C CNN
+F 3 "~" H 2500 4700 50  0001 C CNN
+	1    2500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EE01682
+P 2500 4900
+F 0 "#PWR0102" H 2500 4650 50  0001 C CNN
+F 1 "GND" H 2505 4727 50  0000 C CNN
+F 2 "" H 2500 4900 50  0001 C CNN
+F 3 "" H 2500 4900 50  0001 C CNN
+	1    2500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4850 2500 4900
+Wire Wire Line
+	1250 3700 1200 3700
+Text Label 1150 3700 2    50   ~ 0
+THRESHOLD
+$Comp
+L Transistor_BJT:2SA1015 Q11
+U 1 1 5EE07D37
+P 4800 4100
+F 0 "Q11" H 4990 4054 50  0000 L CNN
+F 1 "PNP" H 4990 4145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5000 4025 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 4800 4100 50  0001 L CNN
+	1    4800 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q12
+U 1 1 5EE08184
+P 5500 4100
+F 0 "Q12" H 5691 4054 50  0000 L CNN
+F 1 "PNP" H 5691 4145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5700 4025 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 5500 4100 50  0001 L CNN
+	1    5500 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q10
+U 1 1 5EE086FF
+P 4450 4350
+F 0 "Q10" H 4640 4304 50  0000 L CNN
+F 1 "PNP" H 4640 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4650 4275 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 4450 4350 50  0001 L CNN
+	1    4450 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2SA1015 Q13
+U 1 1 5EE08BDD
+P 5850 4350
+F 0 "Q13" H 6041 4304 50  0000 L CNN
+F 1 "PNP" H 6041 4395 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6050 4275 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 5850 4350 50  0001 L CNN
+	1    5850 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 4100 5750 4150
+Wire Wire Line
+	5750 4100 5700 4100
+Wire Wire Line
+	4900 3900 4900 3850
+Wire Wire Line
+	4900 3850 5150 3850
+Wire Wire Line
+	5400 3850 5400 3900
+$Comp
+L power:GND #PWR0103
+U 1 1 5EE0BE87
+P 4550 4600
+F 0 "#PWR0103" H 4550 4350 50  0001 C CNN
+F 1 "GND" H 4555 4427 50  0000 C CNN
+F 2 "" H 4550 4600 50  0001 C CNN
+F 3 "" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EE0C244
+P 5400 5450
+F 0 "#PWR0104" H 5400 5200 50  0001 C CNN
+F 1 "GND" H 5405 5277 50  0000 C CNN
+F 2 "" H 5400 5450 50  0001 C CNN
+F 3 "" H 5400 5450 50  0001 C CNN
+	1    5400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4300 5400 4600
+Wire Wire Line
+	5400 4600 5750 4600
+Wire Wire Line
+	5750 4600 5750 4550
+Connection ~ 5400 4600
+Wire Wire Line
+	5400 4600 5400 5100
+Wire Wire Line
+	4550 4550 4550 4600
+$Comp
+L Device:R R6
+U 1 1 5EE0F134
+P 4900 5250
+F 0 "R6" H 4970 5296 50  0000 L CNN
+F 1 "100k" H 4970 5205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4830 5250 50  0001 C CNN
+F 3 "~" H 4900 5250 50  0001 C CNN
+	1    4900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4300 4900 5050
+$Comp
+L power:GND #PWR0105
+U 1 1 5EE1083B
+P 4900 5450
+F 0 "#PWR0105" H 4900 5200 50  0001 C CNN
+F 1 "GND" H 4905 5277 50  0000 C CNN
+F 2 "" H 4900 5450 50  0001 C CNN
+F 3 "" H 4900 5450 50  0001 C CNN
+	1    4900 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5400 4900 5450
+Wire Wire Line
+	4250 4350 4200 4350
+Text Label 4150 4350 2    50   ~ 0
+TRIGGER
+Wire Wire Line
+	5150 2500 5150 3850
+Connection ~ 5150 3850
+Wire Wire Line
+	5150 3850 5400 3850
+$Comp
+L Transistor_BJT:2SA1015 Q19
+U 1 1 5EE1E820
+P 7900 1900
+F 0 "Q19" H 8091 1854 50  0000 L CNN
+F 1 "PNP" H 8091 1945 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 8100 1825 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 7900 1900 50  0001 L CNN
+	1    7900 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EE2C13E
+P 5150 1700
+F 0 "R4" H 5220 1746 50  0000 L CNN
+F 1 "1k" H 5220 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5080 1700 50  0001 C CNN
+F 3 "~" H 5150 1700 50  0001 C CNN
+	1    5150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5EE2CC36
+P 6100 1700
+F 0 "R7" H 6170 1746 50  0000 L CNN
+F 1 "5k" H 6170 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6030 1700 50  0001 C CNN
+F 3 "~" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1850 5150 2050
+$Comp
+L Device:R R8
+U 1 1 5EE2E3AB
+P 6100 4000
+F 0 "R8" H 6170 4046 50  0000 L CNN
+F 1 "5k" H 6170 3955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6030 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5EE2EDBC
+P 6100 4600
+F 0 "R9" H 6170 4646 50  0000 L CNN
+F 1 "5k" H 6170 4555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6030 4600 50  0001 C CNN
+F 3 "~" H 6100 4600 50  0001 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1850 6100 2850
+Wire Wire Line
+	6100 4150 6100 4350
+$Comp
+L power:GND #PWR0106
+U 1 1 5EE31E3C
+P 6100 4800
+F 0 "#PWR0106" H 6100 4550 50  0001 C CNN
+F 1 "GND" H 6105 4627 50  0000 C CNN
+F 2 "" H 6100 4800 50  0001 C CNN
+F 3 "" H 6100 4800 50  0001 C CNN
+	1    6100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4750 6100 4800
+Wire Wire Line
+	6050 4350 6100 4350
+Connection ~ 6100 4350
+Wire Wire Line
+	6100 4350 6100 4450
+Wire Wire Line
+	3450 1500 5150 1500
+Wire Wire Line
+	6100 1500 6100 1550
+Connection ~ 3450 1500
+Wire Wire Line
+	3750 3700 6100 3700
+Connection ~ 6100 3700
+Wire Wire Line
+	6100 3700 6100 3850
+Wire Wire Line
+	5150 1550 5150 1500
+Connection ~ 5150 1500
+Wire Wire Line
+	5150 1500 6100 1500
+$Comp
+L Transistor_BJT:2SC1815 Q15
+U 1 1 5EE55F70
+P 7850 5050
+F 0 "Q15" H 8041 5096 50  0000 L CNN
+F 1 "NPN" H 8041 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 8050 4975 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 7850 5050 50  0001 L CNN
+	1    7850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q16
+U 1 1 5EE569E8
+P 7700 4350
+F 0 "Q16" H 7891 4396 50  0000 L CNN
+F 1 "NPN" H 7891 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7900 4275 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 7700 4350 50  0001 L CNN
+	1    7700 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q17
+U 1 1 5EE56F8F
+P 8400 4050
+F 0 "Q17" H 8591 4096 50  0000 L CNN
+F 1 "NPN" H 8591 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 8600 3975 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 8400 4050 50  0001 L CNN
+	1    8400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q20
+U 1 1 5EE57496
+P 9200 3450
+F 0 "Q20" H 9391 3496 50  0000 L CNN
+F 1 "NPN" H 9391 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9400 3375 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 9200 3450 50  0001 L CNN
+	1    9200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5EE579CF
+P 7950 5400
+F 0 "#PWR0107" H 7950 5150 50  0001 C CNN
+F 1 "GND" H 7955 5227 50  0000 C CNN
+F 2 "" H 7950 5400 50  0001 C CNN
+F 3 "" H 7950 5400 50  0001 C CNN
+	1    7950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5EE57BE9
+P 7600 4600
+F 0 "#PWR0108" H 7600 4350 50  0001 C CNN
+F 1 "GND" H 7605 4427 50  0000 C CNN
+F 2 "" H 7600 4600 50  0001 C CNN
+F 3 "" H 7600 4600 50  0001 C CNN
+	1    7600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5EE57E8F
+P 8500 4300
+F 0 "#PWR0109" H 8500 4050 50  0001 C CNN
+F 1 "GND" H 8505 4127 50  0000 C CNN
+F 2 "" H 8500 4300 50  0001 C CNN
+F 3 "" H 8500 4300 50  0001 C CNN
+	1    8500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5EE580F8
+P 9300 6150
+F 0 "#PWR0110" H 9300 5900 50  0001 C CNN
+F 1 "GND" H 9305 5977 50  0000 C CNN
+F 2 "" H 9300 6150 50  0001 C CNN
+F 3 "" H 9300 6150 50  0001 C CNN
+	1    9300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5250 7950 5400
+Wire Wire Line
+	7600 4550 7600 4600
+Wire Wire Line
+	8500 4250 8500 4300
+$Comp
+L Device:R R15
+U 1 1 5EE5E221
+P 9300 5950
+F 0 "R15" H 9370 5996 50  0000 L CNN
+F 1 "4.7k" H 9370 5905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9230 5950 50  0001 C CNN
+F 3 "~" H 9300 5950 50  0001 C CNN
+	1    9300 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5EE5E672
+P 9500 4000
+F 0 "R14" V 9293 4000 50  0000 C CNN
+F 1 "220" V 9384 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9430 4000 50  0001 C CNN
+F 3 "~" H 9500 4000 50  0001 C CNN
+	1    9500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5EE60FDF
+P 9550 5500
+F 0 "R16" V 9343 5500 50  0000 C CNN
+F 1 "100" V 9434 5500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9480 5500 50  0001 C CNN
+F 3 "~" H 9550 5500 50  0001 C CNN
+	1    9550 5500
+	0    1    1    0   
+$EndComp
+Connection ~ 4900 5050
+Wire Wire Line
+	4900 5050 4900 5100
+Wire Wire Line
+	2250 2900 2250 3300
+Wire Wire Line
+	7800 2300 7800 2100
+Connection ~ 6100 1500
+Connection ~ 8500 1500
+Wire Wire Line
+	9000 3450 8500 3450
+Connection ~ 8500 3450
+Wire Wire Line
+	8500 3450 8500 3700
+Wire Wire Line
+	9300 3650 9300 4000
+Wire Wire Line
+	9300 6100 9300 6150
+Wire Wire Line
+	9350 4000 9300 4000
+$Comp
+L Transistor_BJT:2SC1815 Q23
+U 1 1 5EED439A
+P 9800 3100
+F 0 "Q23" H 9991 3146 50  0000 L CNN
+F 1 "NPN" H 9991 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 10000 3025 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 9800 3100 50  0001 L CNN
+	1    9800 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5EED9F5E
+P 9300 1700
+F 0 "R12" H 9370 1746 50  0000 L CNN
+F 1 "6.8k" H 9370 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9230 1700 50  0001 C CNN
+F 3 "~" H 9300 1700 50  0001 C CNN
+	1    9300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1500 8500 1500
+Wire Wire Line
+	9750 1500 9750 1750
+Connection ~ 7800 1500
+Wire Wire Line
+	9300 1550 9300 1500
+Connection ~ 9300 1500
+Wire Wire Line
+	9300 1500 9750 1500
+Wire Wire Line
+	9300 1850 9300 1950
+Wire Wire Line
+	9300 1950 9450 1950
+Connection ~ 9750 1500
+Wire Wire Line
+	9750 2150 9750 2200
+Connection ~ 9750 2200
+$Comp
+L Device:R R11
+U 1 1 5EF0A8B6
+P 8250 3700
+F 0 "R11" V 8457 3700 50  0000 C CNN
+F 1 "4.7k" V 8366 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8180 3700 50  0001 C CNN
+F 3 "~" H 8250 3700 50  0001 C CNN
+	1    8250 3700
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 9700 3300
+$Comp
+L Transistor_BJT:2SA1015 Q25
+U 1 1 5EF43AC7
+P 7150 5500
+F 0 "Q25" H 7340 5454 50  0000 L CNN
+F 1 "PNP" H 7340 5545 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7350 5425 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 7150 5500 50  0001 L CNN
+	1    7150 5500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7250 5700 7250 5750
+Wire Wire Line
+	6950 5500 6900 5500
+Text Label 6850 5500 2    50   ~ 0
+RESET
+Wire Wire Line
+	9700 2900 9700 2850
+Wire Wire Line
+	9700 2850 9300 2850
+Wire Wire Line
+	9750 2650 9750 2700
+Wire Wire Line
+	9750 2200 9750 2350
+$Comp
+L Device:R R13
+U 1 1 5EED9A51
+P 9750 2500
+F 0 "R13" H 9820 2546 50  0000 L CNN
+F 1 "3.9k" H 9820 2455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9680 2500 50  0001 C CNN
+F 3 "~" H 9750 2500 50  0001 C CNN
+	1    9750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3100 5950 3100
+Connection ~ 6100 3100
+Wire Wire Line
+	6100 3100 6100 3700
+Text Label 5950 3100 2    50   ~ 0
+CONTROL_VOLTAGE
+Wire Wire Line
+	9300 5800 9300 5750
+Connection ~ 9300 4000
+Wire Wire Line
+	9400 5500 9300 5500
+Connection ~ 9300 5500
+Wire Wire Line
+	9300 5500 9300 4800
+Wire Wire Line
+	7250 5750 9300 5750
+Connection ~ 9300 5750
+Wire Wire Line
+	9300 5750 9300 5500
+Wire Wire Line
+	9300 2850 9300 3250
+Wire Wire Line
+	8500 3700 8400 3700
+$Comp
+L Transistor_BJT:2SC1815 Q18
+U 1 1 5EF4343A
+P 7500 3350
+F 0 "Q18" H 7691 3396 50  0000 L CNN
+F 1 "NPN" H 7691 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7700 3275 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 7500 3350 50  0001 L CNN
+	1    7500 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 3100
+Wire Wire Line
+	7600 3100 7600 3150
+Wire Wire Line
+	7250 3100 7600 3100
+$Comp
+L Device:R R10
+U 1 1 5EE75D26
+P 7600 2700
+F 0 "R10" H 7670 2746 50  0000 L CNN
+F 1 "10k" H 7670 2655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7530 2700 50  0001 C CNN
+F 3 "~" H 7600 2700 50  0001 C CNN
+	1    7600 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 9300 2850
+Connection ~ 9300 1950
+Wire Wire Line
+	9300 1950 9300 2400
+Connection ~ 8500 3700
+Wire Wire Line
+	8500 3700 8500 3850
+Wire Wire Line
+	7250 3100 7250 3350
+Wire Wire Line
+	7250 3350 7300 3350
+Wire Wire Line
+	8500 2100 8500 3100
+Wire Wire Line
+	7600 2550 7600 2300
+Connection ~ 7600 2300
+Wire Wire Line
+	7600 2300 7800 2300
+Wire Wire Line
+	7600 3550 7600 4050
+Wire Wire Line
+	8200 4050 7600 4050
+Connection ~ 7600 4050
+Wire Wire Line
+	7600 4050 7600 4150
+Wire Notes Line
+	650  1200 3750 1200
+Wire Notes Line
+	3750 1200 3750 6450
+Wire Notes Line
+	3750 6450 650  6450
+Wire Notes Line
+	650  6450 650  1200
+Wire Notes Line
+	3800 1200 6300 1200
+Wire Wire Line
+	7600 2850 7600 3100
+Wire Wire Line
+	7950 3700 8100 3700
+Wire Wire Line
+	7950 3700 7950 4350
+Wire Wire Line
+	7950 4350 7900 4350
+Connection ~ 7950 3700
+Wire Wire Line
+	2250 3300 6500 3300
+Wire Wire Line
+	7950 4350 7950 4850
+Connection ~ 7950 4350
+Connection ~ 1550 2950
+Wire Wire Line
+	1550 2950 1550 3450
+Wire Wire Line
+	1900 3450 1550 3450
+Connection ~ 1550 3450
+Wire Wire Line
+	1550 3450 1550 3500
+Wire Wire Line
+	3050 2700 3100 2700
+Wire Wire Line
+	3450 2900 3450 2950
+Connection ~ 3450 3450
+Wire Wire Line
+	3100 2700 3100 2950
+Wire Wire Line
+	3100 2950 3450 2950
+Connection ~ 3100 2700
+Wire Wire Line
+	3100 2700 3150 2700
+Connection ~ 3450 2950
+Wire Wire Line
+	3450 2950 3450 3450
+Wire Wire Line
+	8500 1500 9300 1500
+Wire Wire Line
+	8500 1500 8500 1700
+Wire Wire Line
+	6100 1500 7800 1500
+Wire Wire Line
+	5450 2300 7600 2300
+Wire Wire Line
+	7800 1500 7800 1700
+$Comp
+L Transistor_BJT:2SA1015 Q26
+U 1 1 5EE1EB17
+P 8400 1900
+F 0 "Q26" H 8590 1854 50  0000 L CNN
+F 1 "PNP" H 8590 1945 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 8600 1825 50  0001 L CIN
+F 3 "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf" H 8400 1900 50  0001 L CNN
+	1    8400 1900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7250 3350 7250 5300
+Connection ~ 7250 3350
+Wire Notes Line
+	6350 1200 8800 1200
+Wire Notes Line
+	8800 1200 8800 6450
+Wire Notes Line
+	8800 6450 6350 6450
+Wire Notes Line
+	6350 6450 6350 1200
+Wire Notes Line
+	8850 6450 8850 1200
+Text Notes 2700 1200 2    50   ~ 0
+THRESHOLD COMPARATOR
+Text Notes 5500 1200 2    50   ~ 0
+TRIGGER COMPARATOR
+Text Notes 7900 1200 2    50   ~ 0
+FLIP-FLOP
+Text Notes 10150 1200 2    50   ~ 0
+OUTPUT
+Wire Notes Line
+	6300 1200 6300 6450
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EDFF3F5
+P 1500 2350
+F 0 "TP2" H 1558 2468 50  0000 L CNN
+F 1 "TestPoint" H 1558 2377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1700 2350 50  0001 C CNN
+F 3 "~" H 1700 2350 50  0001 C CNN
+	1    1500 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1550 2350
+Wire Wire Line
+	1550 2350 1550 1850
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EF1259E
+P 900 3500
+F 0 "TP1" H 958 3618 50  0000 L CNN
+F 1 "TestPoint" H 958 3527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1100 3500 50  0001 C CNN
+F 3 "~" H 1100 3500 50  0001 C CNN
+	1    900  3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 3700
+Wire Wire Line
+	1200 3700 1150 3700
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EF20896
+P 3950 4150
+F 0 "TP5" H 4008 4268 50  0000 L CNN
+F 1 "TestPoint" H 4008 4177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 4150 4150 50  0001 C CNN
+F 3 "~" H 4150 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4350 4200 4200
+Connection ~ 4200 4350
+Wire Wire Line
+	4200 4350 4150 4350
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EF2F5C6
+P 3400 2350
+F 0 "TP3" H 3458 2468 50  0000 L CNN
+F 1 "TestPoint" H 3458 2377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3600 2350 50  0001 C CNN
+F 3 "~" H 3600 2350 50  0001 C CNN
+	1    3400 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EF37106
+P 2300 4100
+F 0 "TP4" H 2358 4218 50  0000 L CNN
+F 1 "TestPoint" H 2358 4127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2500 4100 50  0001 C CNN
+F 3 "~" H 2500 4100 50  0001 C CNN
+	1    2300 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 4200
+Wire Wire Line
+	2300 4200 2500 4200
+Wire Wire Line
+	2500 4550 2500 4200
+Connection ~ 2500 4200
+Wire Wire Line
+	2500 4200 3100 4200
+Wire Wire Line
+	6500 3700 6500 3300
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EF76C81
+P 4950 2050
+F 0 "TP6" H 5008 2168 50  0000 L CNN
+F 1 "TestPoint" H 5008 2077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5150 2050 50  0001 C CNN
+F 3 "~" H 5150 2050 50  0001 C CNN
+	1    4950 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2050 5150 2050
+Connection ~ 5150 2050
+Wire Wire Line
+	5150 2050 5150 2100
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EF7F1D5
+P 6750 5000
+F 0 "TP9" H 6808 5118 50  0000 L CNN
+F 1 "TestPoint" H 6808 5027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6950 5000 50  0001 C CNN
+F 3 "~" H 6950 5000 50  0001 C CNN
+	1    6750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5EF88151
+P 6750 3650
+F 0 "TP8" H 6808 3768 50  0000 L CNN
+F 1 "TestPoint" H 6808 3677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6950 3650 50  0001 C CNN
+F 3 "~" H 6950 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2350 1550 2350
+Wire Wire Line
+	3450 1850 3450 2350
+Wire Wire Line
+	3400 2350 3450 2350
+Connection ~ 3450 2350
+Wire Wire Line
+	3450 2350 3450 2500
+Wire Wire Line
+	2300 4200 2300 4100
+Wire Wire Line
+	6750 5000 6750 5050
+Wire Wire Line
+	4900 5050 6750 5050
+Connection ~ 6750 5050
+Wire Wire Line
+	6750 5050 7650 5050
+Wire Wire Line
+	6750 3700 6750 3650
+Wire Wire Line
+	6500 3700 6750 3700
+Connection ~ 6750 3700
+Wire Wire Line
+	6750 3700 7950 3700
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5F07BD52
+P 9250 2400
+F 0 "TP13" H 9308 2518 50  0000 L CNN
+F 1 "TestPoint" H 9308 2427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 9450 2400 50  0001 C CNN
+F 3 "~" H 9450 2400 50  0001 C CNN
+	1    9250 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 2400 9300 2400
+Connection ~ 9300 2400
+Wire Wire Line
+	9300 2400 9300 2850
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5F08569E
+P 9250 4800
+F 0 "TP14" H 9308 4918 50  0000 L CNN
+F 1 "TestPoint" H 9308 4827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 9450 4800 50  0001 C CNN
+F 3 "~" H 9450 4800 50  0001 C CNN
+	1    9250 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5F085A57
+P 8450 3100
+F 0 "TP12" H 8508 3218 50  0000 L CNN
+F 1 "TestPoint" H 8508 3127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8650 3100 50  0001 C CNN
+F 3 "~" H 8650 3100 50  0001 C CNN
+	1    8450 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 4800 9300 4800
+Connection ~ 9300 4800
+Wire Wire Line
+	9300 4800 9300 4000
+Wire Wire Line
+	8450 3100 8500 3100
+Connection ~ 8500 3100
+Wire Wire Line
+	8500 3100 8500 3450
+Wire Wire Line
+	9700 5500 9900 5500
+Wire Wire Line
+	9650 4000 9900 4000
+Wire Wire Line
+	10350 5250 10500 5250
+Connection ~ 10350 5250
+Wire Wire Line
+	10350 5100 10350 5250
+Wire Wire Line
+	10200 3100 10200 3750
+Wire Wire Line
+	10350 3600 10350 3750
+Wire Wire Line
+	10350 3750 10500 3750
+Connection ~ 10350 3750
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5EEFCF5B
+P 10350 5100
+F 0 "TP16" H 10408 5218 50  0000 L CNN
+F 1 "TestPoint" H 10408 5127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10550 5100 50  0001 C CNN
+F 3 "~" H 10550 5100 50  0001 C CNN
+	1    10350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5EEFC1E1
+P 10350 3600
+F 0 "TP15" H 10408 3718 50  0000 L CNN
+F 1 "TestPoint" H 10408 3627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10550 3600 50  0001 C CNN
+F 3 "~" H 10550 3600 50  0001 C CNN
+	1    10350 3600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11000 6450 8850 6450
+Wire Notes Line
+	11000 1200 11000 6450
+Wire Notes Line
+	8850 1200 11000 1200
+Connection ~ 10200 1500
+Wire Wire Line
+	10200 1450 10200 1500
+$Comp
+L power:VCC #PWR0114
+U 1 1 5F0ECC5A
+P 10200 1450
+F 0 "#PWR0114" H 10200 1300 50  0001 C CNN
+F 1 "VCC" H 10215 1623 50  0000 C CNN
+F 2 "" H 10200 1450 50  0001 C CNN
+F 3 "" H 10200 1450 50  0001 C CNN
+	1    10200 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 10200 3100
+Wire Wire Line
+	10000 3100 10200 3100
+Connection ~ 10200 3750
+Connection ~ 10200 2700
+Wire Wire Line
+	10200 2700 10200 3100
+Wire Wire Line
+	10200 2700 10200 2400
+Wire Wire Line
+	9750 2700 10200 2700
+Wire Wire Line
+	10200 1500 10200 2000
+Wire Wire Line
+	9750 1500 10200 1500
+Text Label 10500 3750 0    50   ~ 0
+OUTPUT
+Wire Wire Line
+	10200 3750 10350 3750
+Wire Wire Line
+	10200 3800 10200 3750
+Text Label 10500 5250 0    50   ~ 0
+DISCHARGE
+Wire Wire Line
+	10200 5250 10350 5250
+Wire Wire Line
+	10200 5300 10200 5250
+Wire Wire Line
+	10200 4200 10200 4250
+Wire Wire Line
+	10200 5700 10200 5750
+$Comp
+L power:GND #PWR0112
+U 1 1 5EEBF735
+P 10200 5750
+F 0 "#PWR0112" H 10200 5500 50  0001 C CNN
+F 1 "GND" H 10205 5577 50  0000 C CNN
+F 2 "" H 10200 5750 50  0001 C CNN
+F 3 "" H 10200 5750 50  0001 C CNN
+	1    10200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5EEBF391
+P 10200 4250
+F 0 "#PWR0111" H 10200 4000 50  0001 C CNN
+F 1 "GND" H 10205 4077 50  0000 C CNN
+F 2 "" H 10200 4250 50  0001 C CNN
+F 3 "" H 10200 4250 50  0001 C CNN
+	1    10200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q14
+U 1 1 5EEBB79D
+P 10100 5500
+F 0 "Q14" H 10291 5546 50  0000 L CNN
+F 1 "NPN" H 10291 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 10300 5425 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 10100 5500 50  0001 L CNN
+	1    10100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q24
+U 1 1 5EE5DBA1
+P 10100 4000
+F 0 "Q24" H 10291 4046 50  0000 L CNN
+F 1 "NPN" H 10291 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 10300 3925 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 10100 4000 50  0001 L CNN
+	1    10100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5EF3C466
+P 6000 2850
+F 0 "TP7" H 6058 2968 50  0000 L CNN
+F 1 "TestPoint" H 6058 2877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6200 2850 50  0001 C CNN
+F 3 "~" H 6200 2850 50  0001 C CNN
+	1    6000 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 2850 6100 2850
+Connection ~ 6100 2850
+Wire Wire Line
+	6100 2850 6100 3100
+$Comp
+L Device:R R17
+U 1 1 5EF69442
+P 5400 5250
+F 0 "R17" H 5470 5296 50  0000 L CNN
+F 1 "0" H 5470 5205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5330 5250 50  0001 C CNN
+F 3 "~" H 5400 5250 50  0001 C CNN
+	1    5400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5400 5400 5450
+Text Notes 6950 5150 0    50   ~ 0
+Set
+Text Notes 6950 3800 0    50   ~ 0
+Reset
+Wire Notes Line
+	3800 6450 3800 1200
+Wire Notes Line
+	6300 6450 3800 6450
+Wire Wire Line
+	5750 7000 5750 6950
+Wire Wire Line
+	3050 6950 3050 7000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F100B87
+P 3050 6950
+F 0 "#FLG0102" H 3050 7025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3050 7123 50  0000 C CNN
+F 2 "" H 3050 6950 50  0001 C CNN
+F 3 "~" H 3050 6950 50  0001 C CNN
+	1    3050 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F100895
+P 5750 6950
+F 0 "#FLG0101" H 5750 7025 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 7123 50  0000 C CNN
+F 2 "" H 5750 6950 50  0001 C CNN
+F 3 "~" H 5750 6950 50  0001 C CNN
+	1    5750 6950
+	1    0    0    -1  
+$EndComp
+Text Label 4700 7100 2    50   ~ 0
+DISCHARGE
+Text Label 5200 7200 0    50   ~ 0
+OUTPUT
+Text Label 4700 7300 2    50   ~ 0
+CONTROL_VOLTAGE
+Wire Wire Line
+	3350 7000 3350 6950
+$Comp
+L power:VCC #PWR0115
+U 1 1 5F0F30EE
+P 3350 6950
+F 0 "#PWR0115" H 3350 6800 50  0001 C CNN
+F 1 "VCC" H 3365 7123 50  0000 C CNN
+F 2 "" H 3350 6950 50  0001 C CNN
+F 3 "" H 3350 6950 50  0001 C CNN
+	1    3350 6950
+	1    0    0    -1  
+$EndComp
+Text Label 4700 7200 2    50   ~ 0
+THRESHOLD
+Text Label 5200 7300 0    50   ~ 0
+RESET
+Wire Wire Line
+	4700 7000 3500 7000
+$Comp
+L power:GND #PWR0113
+U 1 1 5F0E6A8E
+P 6050 7050
+F 0 "#PWR0113" H 6050 6800 50  0001 C CNN
+F 1 "GND" H 6055 6877 50  0000 C CNN
+F 2 "" H 6050 7050 50  0001 C CNN
+F 3 "" H 6050 7050 50  0001 C CNN
+	1    6050 7050
+	1    0    0    -1  
+$EndComp
+Text Label 5200 7100 0    50   ~ 0
+TRIGGER
+Wire Wire Line
+	2500 1850 2500 2450
+Wire Wire Line
+	8100 1900 8150 1900
+Wire Wire Line
+	7800 2300 8150 2300
+Wire Wire Line
+	8150 2300 8150 1900
+Connection ~ 7800 2300
+Connection ~ 8150 1900
+Wire Wire Line
+	8150 1900 8200 1900
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5EE149BD
+P 7150 3100
+F 0 "TP11" H 7208 3218 50  0000 L CNN
+F 1 "TestPoint" H 7208 3127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7350 3100 50  0001 C CNN
+F 3 "~" H 7350 3100 50  0001 C CNN
+	1    7150 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 3100 7250 3100
+Connection ~ 7250 3100
+Wire Wire Line
+	900  3500 900  3550
+Wire Wire Line
+	900  3550 1200 3550
+Wire Wire Line
+	1200 3550 1200 3700
+Wire Wire Line
+	3950 4200 4200 4200
+Wire Wire Line
+	3950 4150 3950 4200
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5EF39F4F
+P 6650 5300
+F 0 "TP10" H 6708 5418 50  0000 L CNN
+F 1 "TestPoint" H 6708 5327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6850 5300 50  0001 C CNN
+F 3 "~" H 6850 5300 50  0001 C CNN
+	1    6650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5300 6650 5350
+Wire Wire Line
+	6650 5350 6900 5350
+Wire Wire Line
+	6900 5350 6900 5500
+Connection ~ 6900 5500
+Wire Wire Line
+	6900 5500 6850 5500
+Wire Wire Line
+	4600 4100 4550 4100
+Wire Wire Line
+	4550 4100 4550 4150
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 5EE22781
+P 4900 7100
+F 0 "J1" H 4950 7417 50  0000 C CNN
+F 1 "555" H 4950 7326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal" H 4900 7100 50  0001 C CNN
+F 3 "~" H 4900 7100 50  0001 C CNN
+	1    4900 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 7000 5750 7000
+Connection ~ 3350 7000
+Wire Wire Line
+	3350 7000 3050 7000
+Connection ~ 5750 7000
+$Comp
+L Transistor_BJT:2SC1815 Q21
+U 1 1 5EE9ACF1
+P 9650 1950
+F 0 "Q21" H 9841 1996 50  0000 L CNN
+F 1 "NPN" H 9841 1905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9850 1875 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 9650 1950 50  0001 L CNN
+	1    9650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2200 9750 2200
+$Comp
+L Transistor_BJT:2SC1815 Q22
+U 1 1 5EE9BFC3
+P 10100 2200
+F 0 "Q22" H 10291 2246 50  0000 L CNN
+F 1 "NPN" H 10291 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 10300 2125 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 10100 2200 50  0001 L CNN
+	1    10100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EEA82C9
+P 3500 7200
+F 0 "C1" H 3615 7246 50  0000 L CNN
+F 1 "100n" H 3615 7155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3538 7050 50  0001 C CNN
+F 3 "~" H 3500 7200 50  0001 C CNN
+	1    3500 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5EEB35FD
+P 3500 7400
+F 0 "#PWR0116" H 3500 7150 50  0001 C CNN
+F 1 "GND" H 3505 7227 50  0000 C CNN
+F 2 "" H 3500 7400 50  0001 C CNN
+F 3 "" H 3500 7400 50  0001 C CNN
+	1    3500 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7050 3500 7000
+Connection ~ 3500 7000
+Wire Wire Line
+	3500 7000 3350 7000
+Wire Wire Line
+	3500 7350 3500 7400
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5EEE20DB
+P 6050 6950
+F 0 "TP17" H 6108 7068 50  0000 L CNN
+F 1 "TestPoint" H 6108 6977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6250 6950 50  0001 C CNN
+F 3 "~" H 6250 6950 50  0001 C CNN
+	1    6050 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7000 6050 7000
+Wire Wire Line
+	6050 7000 6050 6950
+Wire Wire Line
+	6050 7050 6050 7000
+Connection ~ 6050 7000
+$EndSCHEMATC
